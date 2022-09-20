@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ccffff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.flight.TrangChuController">
+   <children>
+      <Button fx:id="btKH_TraCuuCB" layoutX="14.0" layoutY="170.0" mnemonicParsing="false" onAction="#traCuuCBHandler" prefHeight="30.0" prefWidth="196.0" text="Tra Cứu Chuyến Bay" />
+      <Button fx:id="btKH_TraCuuVe" layoutX="203.0" layoutY="252.0" mnemonicParsing="false" onAction="#traCuuVeHandler" prefHeight="30.0" prefWidth="196.0" text="Tra Cứu Vé" />
+      <Button fx:id="btKH_DatVeOnline" layoutX="375.0" layoutY="356.0" mnemonicParsing="false" onAction="#datVeOnlineHandler" prefHeight="30.0" prefWidth="196.0" text="Đặt Vé Online" />
+      <AnchorPane layoutX="2.0" layoutY="7.0" minHeight="0.0" minWidth="0.0" prefHeight="58.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="3.0" prefHeight="58.0" prefWidth="185.0" text="XIN CHÀO">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbKhachHang" layoutX="193.0" layoutY="-5.0" prefHeight="67.0" prefWidth="408.0" text="Khách Hàng">
+               <font>
+                  <Font name="Arial Italic" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="82.0" fitWidth="130.0" layoutX="14.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/tccb.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="120.0" fitWidth="138.0" layoutX="241.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/ve.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="82.0" fitWidth="147.0" layoutX="516.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/datveonl.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

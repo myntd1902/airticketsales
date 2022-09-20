@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ccffff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.flight.ThayDoiQuiDinhController">
+   <children>
+      <Label layoutX="195.0" layoutY="14.0" style="-fx-background-color: lightblue;" text="Thay Đổi Qui Định">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="14.0" layoutY="65.0" prefHeight="227.0" prefWidth="336.0" style="-fx-background-color: lightblue;">
+         <children>
+            <Label layoutX="14.0" layoutY="31.0" text="Số lượng sân bay" />
+            <Label layoutX="14.0" layoutY="68.0" text="Thời gian bay tối thiểu(phút)" />
+            <Label layoutX="14.0" layoutY="105.0" prefHeight="17.0" prefWidth="151.0" text="Số sân bay trung gian tối đa" />
+            <Label layoutX="14.0" layoutY="144.0" prefHeight="17.0" prefWidth="275.0" text="Thời gian dừng tối thiểu giữa các chuyến bay trung gian(phút)">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="181.0" prefHeight="17.0" prefWidth="267.0" text="Thời gian dừng tối đa giữa các chuyến bay trung gian(phút)">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <ChoiceBox layoutX="289.0" layoutY="27.0" prefHeight="25.0" prefWidth="41.0" />
+            <ChoiceBox layoutX="289.0" layoutY="64.0" prefHeight="25.0" prefWidth="41.0" />
+            <ChoiceBox layoutX="289.0" layoutY="101.0" prefHeight="25.0" prefWidth="41.0" />
+            <ChoiceBox layoutX="289.0" layoutY="140.0" prefHeight="25.0" prefWidth="41.0" />
+            <ChoiceBox layoutX="287.0" layoutY="183.0" prefHeight="25.0" prefWidth="41.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="355.0" layoutY="65.0" prefHeight="110.0" prefWidth="229.0" style="-fx-background-color: lightblue;">
+         <children>
+            <Label layoutX="14.0" layoutY="22.0" text="Chỉ bán vé khi còn chỗ" />
+            <Label layoutX="14.0" layoutY="56.0" text="Số lượng các hạng vé" />
+            <CheckBox layoutX="169.0" layoutY="22.0" mnemonicParsing="false" text="Đồng ý" />
+            <ChoiceBox layoutX="178.0" layoutY="57.0" prefHeight="25.0" prefWidth="41.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="355.0" layoutY="179.0" prefHeight="110.0" prefWidth="229.0" style="-fx-background-color: lightblue;">
+         <children>
+            <Label layoutX="14.0" layoutY="23.0" prefHeight="17.0" prefWidth="158.0" text="Thời gian chậm nhất khi đặt vé(giờ)">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="62.0" prefHeight="17.0" prefWidth="166.0" text="Thời gian chậm nhất khi hủy vé(giờ)">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <ChoiceBox layoutX="184.0" layoutY="14.0" prefHeight="25.0" prefWidth="41.0" />
+            <ChoiceBox layoutX="185.0" layoutY="62.0" prefHeight="25.0" prefWidth="41.0" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="366.0" layoutY="343.0" mnemonicParsing="false" onAction="#logoutHandler" prefHeight="30.0" prefWidth="79.0" text="Thoát" />
+      <Button layoutX="195.0" layoutY="343.0" mnemonicParsing="false" onAction="#changeHandler" prefHeight="30.0" prefWidth="79.0" text="Thay Đổi" />
+      <ImageView fitHeight="94.0" fitWidth="92.0" layoutY="306.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/uinv.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

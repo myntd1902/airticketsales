@@ -1,0 +1,4 @@
+--patch-module
+com.mycompany.flight=_
+--add-reads
+com.mycompany.flight=ALL-UNNAMED

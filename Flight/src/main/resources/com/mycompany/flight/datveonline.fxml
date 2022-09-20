@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="358.0" prefWidth="600.0" style="-fx-background-color: #ccffff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.flight.DatVeOnlineController">
+   <children>
+      <Label layoutX="201.0" layoutY="14.0" style="-fx-background-color: lightblue;" text="Đặt Vé Online">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="83.0" text="Mã chuyến bay" />
+      <Label layoutX="21.0" layoutY="130.0" text="Hạng vé" />
+      <Label layoutX="21.0" layoutY="180.0" text="Vị trí" />
+      <Label layoutX="312.0" layoutY="83.0" text="Họ tên" />
+      <Label layoutX="312.0" layoutY="130.0" text="CMND/CCCD" />
+      <Label layoutX="312.0" layoutY="180.0" text="Số điện thoại" />
+      <Label layoutX="312.0" layoutY="234.0" text="Email" />
+      <Label layoutX="23.0" layoutY="234.0" text="Giá tiền" />
+      <Button fx:id="btXacNhan" layoutX="118.0" layoutY="299.0" mnemonicParsing="false" onAction="#confirmHandler" prefHeight="30.0" prefWidth="81.0" text="Xác Nhận" />
+      <Button fx:id="btThanhToan" layoutX="219.0" layoutY="301.0" mnemonicParsing="false" onAction="#payHandler" prefHeight="30.0" prefWidth="82.0" text="Thanh Toán" />
+      <Button fx:id="btTiepTuc" layoutX="326.0" layoutY="301.0" mnemonicParsing="false" onAction="#continueHandler" prefHeight="30.0" prefWidth="79.0" text="Tiếp Tục" />
+      <Button fx:id="btThoat" layoutX="428.0" layoutY="301.0" mnemonicParsing="false" onAction="#logoutHandler" prefHeight="30.0" prefWidth="79.0" text="Thoát" />
+      <ComboBox fx:id="cbMaCB" layoutX="111.0" layoutY="79.0" onAction="#chonComboBoxMaCB" prefHeight="26.0" prefWidth="180.0" />
+      <ComboBox fx:id="cbHangVe" layoutX="111.0" layoutY="126.0" onAction="#chonComboBoxHangVe" prefHeight="26.0" prefWidth="180.0" />
+      <ComboBox fx:id="cbViTri" layoutX="111.0" layoutY="176.0" prefHeight="26.0" prefWidth="180.0" />
+      <TextField fx:id="txtGiaTien" disable="true" editable="false" layoutX="111.0" layoutY="229.0" prefHeight="26.0" prefWidth="180.0" />
+      <TextField fx:id="txtHoTen" layoutX="399.0" layoutY="79.0" prefHeight="26.0" prefWidth="180.0" />
+      <TextField fx:id="txtIDCard" layoutX="399.0" layoutY="126.0" prefHeight="26.0" prefWidth="180.0" />
+      <TextField fx:id="txtSDT" layoutX="399.0" layoutY="176.0" prefHeight="26.0" prefWidth="180.0" />
+      <TextField fx:id="txtEmail" layoutX="399.0" layoutY="230.0" prefHeight="26.0" prefWidth="180.0" />
+      <ImageView fitHeight="62.0" fitWidth="64.0" layoutX="7.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/datveonl.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="81.0" layoutX="365.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/uikh.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
